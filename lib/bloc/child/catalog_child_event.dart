@@ -1,0 +1,1 @@
+part of 'catalog_child_bloc.dart';@immutableabstract class CatalogChildEvent {}class ClickItemForSlugEvent extends CatalogChildEvent {  final String title;  final String slug;  ClickItemForSlugEvent(this.slug, this.title);}

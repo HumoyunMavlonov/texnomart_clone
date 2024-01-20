@@ -1,0 +1,1 @@
+part of 'catalog_child_bloc.dart';@immutableabstract class CatalogChildState {}class CatalogChildInitial extends CatalogChildState {}class ClickItemForSlugState extends CatalogChildState {  final String title;  final String slug;  ClickItemForSlugState(this.slug, this.title);}
