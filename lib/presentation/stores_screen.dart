@@ -7,6 +7,8 @@ import 'package:texnomartoriginal/data/api/stores/stores_data.dart';
 import 'package:texnomartoriginal/presentation/components/location_item%20(2).dart';
 import 'package:texnomartoriginal/presentation/map_screen.dart';
 
+import 'all_stores.dart';
+
 class StoresPage extends StatefulWidget {
   const StoresPage({super.key});
 
@@ -70,6 +72,18 @@ class _StoresPageState extends State<StoresPage> {
                     Text("Bizning do`konlar", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),)
                   ],
                 ),
+                actions:  [
+                  InkWell(
+                      onTap: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => AllStoresPage(categoryHolder)));
+                      },
+                      child: Icon(Icons.map)),
+                  SizedBox(width: 20,)
+
+                ],
               ),
               body: SizedBox(
                 child: ListView.builder(
@@ -132,6 +146,20 @@ class _StoresPageState extends State<StoresPage> {
                     Text("Bizning do`konlar", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),)
                   ],
                 ),
+
+                  actions:  [
+                    InkWell(
+                        onTap: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => AllStoresPage(categoryHolder)));
+                        },
+                        child: const Icon(Icons.map)),
+                    const SizedBox(width: 20,)
+
+                  ],
+
               ),
               body: SafeArea(
                 child: Center(
